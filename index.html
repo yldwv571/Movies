@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1 class="logo"><span>M</span>OVIES<span>!</span></h1>
+        <p class="tagline">Eng yaxshi o'zbek kinolari bir joyda</p>
+
+        <div class="search-bar">
+            <input id="search" type="text" placeholder="🔍 Kino nomini yozing...">
+            <select id="lang">
+                <option value="">Barcha tillar</option>
+                <option value="uz">Uzbekcha</option>
+                <option value="ru">Ruscha</option>
+                <option value="en">Inglizcha</option>
+            </select>
+            <select id="sort">
+                <option value="">Saralash</option>
+                <option value="rating">⭐ Reyting bo'yicha</option>
+                <option value="new">🆕 Yangi kinolar</option>
+                <option value="old">📼 Eski kinolar</option>
+                <option value="az">🔤 A → Z</option>
+            </select>
+            <button id="searchBtn" class="btn">Search</button>
+            <button id="resetBtn" class="btn ghost">Reset</button>
+        </div>
+        <div id="count" class="count"></div>
+    </header>
+
+    <main>
+        <div id="cards" class="grid"></div>
+        <div id="empty" class="empty hidden">😕 Bunday kino topilmadi</div>
+    </main>
+
+    <script src="movies.js"></script>
+</body>
+</html>
